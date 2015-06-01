@@ -26,7 +26,7 @@ Take the following example, first written using Promises.  This code chains a se
 function chainAnimationsPromise(elem, animations) {
     var ret = null;
     var p = currentPromise;
-    for(var anim in animations) {
+    for(var anim of animations) {
         p = p.then(function(val) {
             ret = val;
             return anim(elem);

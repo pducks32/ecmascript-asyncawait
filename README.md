@@ -20,7 +20,7 @@ regenerator -r server.asyncawait.js | node
 
 ## Example
 
-Take the following example, first written using Promises.  This code chains a set of animations on an element, stopping when there is an exception in an animation, and returning the value produced by the final succesfully executed animation.
+Take the following example, first written using Promises.  This code chains a set of animations on an element, stopping when there is an exception in an animation, and returning the value produced by the final successfully executed animation.
 
 ```JavaScript
 function chainAnimationsPromise(elem, animations) {
